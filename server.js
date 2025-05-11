@@ -331,7 +331,7 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 // MongoDB connection Data base name and string connection
-mongoose.connect("mongodb://127.0.0.1:27017/hospitalDB");
+mongoose.connect("mongodb+srv://sara:malafiki@cluster0.ue2hgai.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 mongoose.connection.on("connected", () => {
   console.log("✅ MongoDB connected successfully (local)");
 });
